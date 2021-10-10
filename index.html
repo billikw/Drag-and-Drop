@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Drag and Drop demo</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="body">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <div id="dropColumn1" class="drop" ondrop="drop(event)" ondragover="dragOver(event)">
+        <div id="1" class="identifier">Column 1:</div>
+        <div id="card1" class="card" draggable="true"><p>This is a dragable card</p></div>
+        <div id="card2" class="card" draggable="true"><p>This is a dragable card too.</p></div>
+        <div id="card3" class="card" draggable="true"><p>This is also a dragable card</p></div>
+    </div>
+    <div id="dropColumn2" class="drop" ondrop="drop(event)" ondragover="dragOver(event)">
+        <div id="2" class="identifier">Column 2:</div>
+    </div>
+    <div id="dropColumn3" class="drop" ondrop="drop(event)" ondragover="dragOver(event)">
+        <div id="3" class="identifier">Column 3:</div>
+    </div>
+    </div>
+  </body>
+  <script src="app.js" async defer></script>
+</html>
